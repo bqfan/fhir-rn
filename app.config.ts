@@ -26,10 +26,11 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   description: `${Env.NAME} Mobile App`,
   owner: Env.EXPO_ACCOUNT_OWNER,
   scheme: Env.SCHEME,
-  slug: 'obytesapp',
+  slug: 'fhir-react-native',
   version: Env.VERSION.toString(),
+  runtimeVersion: '52.0.0',
   orientation: 'portrait',
-  icon: './assets/icon.png',
+  icon: './assets/images/fhir-icon.png',
   userInterfaceStyle: 'automatic',
   newArchEnabled: true,
   updates: {
@@ -48,21 +49,21 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   },
   android: {
     adaptiveIcon: {
-      foregroundImage: './assets/adaptive-icon.png',
-      backgroundColor: '#2E3C4B',
+      foregroundImage: './assets/images/fhir-adaptive-icon.png',
+      backgroundColor: '#FFFFFF',
     },
     package: Env.PACKAGE,
   },
   web: {
-    favicon: './assets/favicon.png',
+    favicon: './assets/images/fhir-favicon.png',
     bundler: 'metro',
   },
   plugins: [
     [
       'expo-splash-screen',
       {
-        backgroundColor: '#2E3C4B',
-        image: './assets/splash-icon.png',
+        backgroundColor: '#FFFFFF',
+        image: './assets/images/hl7-fhir-logo.png',
         imageWidth: 150,
       },
     ],
